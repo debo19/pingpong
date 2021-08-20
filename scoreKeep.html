@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Game</title>
+    <link rel="stylesheet" href="scoreKeeper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <section class="section">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <h1 class="is-size-1"><span id="p1disp">0</span> to <span id="p2disp">0</span></h1>
+                          <p class="subtitle">Use the buttons below to keep score</p>
+
+                          <label for="playTo" class="is-large is-inline">Playing Upto?</label>
+                          <select class="select is-rounded" name="winning" id="playTo">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        </div>
+                      </div>
+                  
+                      <div class="content is-flex is-justify-content-space-evenly">
+                        <button class="button is-primary is-large" id="p1button">+1 Player One</button>
+                        <button class="button is-link is-large" id="p2button">+1 Player Two</button>
+                        <button class="button is-danger is-large" id="reset">Reset</button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+            </div>
+
+        </div>    
+    </div>
+
+    
+    <script src="scorekeeper.js"></script>
+</body>
+</html>
